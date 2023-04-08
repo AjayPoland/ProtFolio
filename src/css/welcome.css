@@ -1,0 +1,15 @@
+@import './root/root.css';
+.welcome{
+    background-color: var(--top-card-background);
+    color:black;
+}
+header{
+    font-family: var(--home-heading-fnt-1);
+    font-weight: bold;
+}
+main{
+    font-family: var(--home-body-fnt-1);
+    font-size: var(--custome-fnt-size);
+    text-align: justify;
+  text-justify: inter-word;
+}

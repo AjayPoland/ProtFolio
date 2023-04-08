@@ -1,0 +1,65 @@
+@import "./root/root.css";
+.manu-bar {
+  width: 100%;
+  background-color: var(--background-color1);
+}
+.col {
+  margin: 0;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  justify-content: end;
+}
+.nav > .nav-item {
+  display: flex;
+  align-items: center;
+}
+.nav > .nav-item > a {
+  padding: 20px 25px;
+  margin: 0;
+  color: var(--background-color);
+  font-weight: bold;
+  transition: all 1s;
+}
+.btn-admin-col {
+  display: flex;
+  justify-content: end;
+}
+.btn-admin {
+  padding: 0px 25px;
+  margin: 0 2.5rem;
+  background-color: transparent;
+  color: var(--background-color);
+  border: none;
+  font-weight: bold;
+  transition: all 1s;
+}
+.logged_In>.btn{
+    border:none;
+    border-color: none;
+    font-weight: bold;
+}
+.logged_In>.dropdown-menu{
+    background-color:orange;
+    font-weight: bold;
+    border-color: darkred;
+}
+.logged_In>div:hover{
+    background-color: red;
+}
+.logged_In>div>a{
+    color:darkred;
+}
+.logged_In>div>a:hover{
+    background-color: red;
+    color:yellow;
+}
+.btn-admin:hover {
+  background-color: var(--background-color);
+  color: var(--background-color1);
+}
+.nav > .nav-item > a:hover {
+  background-color: var(--background-color);
+  color: var(--background-color1);
+}

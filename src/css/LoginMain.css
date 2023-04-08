@@ -1,0 +1,64 @@
+@import './root/root.css';
+
+/* for removing the arrow button from number input field. */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.frm-close{
+  position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    border:none;
+    background: transparent;
+    font-weight: bold;
+    z-index: 1;
+}
+.login-main{
+  background-color: var(--background-color1);
+  color:black;
+}
+.custom-singin-button {
+  background-color: var(--singin-btn-bg-color);
+  font-weight: bold;
+}
+.custom-singin-button:hover {
+  background-color: var(--singin-btn-bg-color-hover);
+}
+.custom-singup-button {
+  background-color: var(--singup-btn-bg-color);
+  font-weight: bold;
+}
+.custom-singup-button:hover {
+  background-color: var(--singup-btn-bg-color-hover);
+}
+.sing-admin-btn{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.sing-admin {
+  font-weight: bold;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0.3rem;
+}
+  .singin-card{
+    border:none;
+    background: transparent;
+    margin: 0.5rem 0.5rem 0 0.5r;
+  }
+  .singin-logo{
+    margin-left: 5px;
+    margin-top: 5px;
+    width:3.125rem;
+    height:auto;
+  }	
+  

@@ -1,0 +1,15 @@
+@import "./root/root.css";
+.about-home {
+  background-color: var(--down-card-background);
+  color: #f7ede2;
+}
+.about-heading {
+  font-family: var(--home-heading-fnt-1);
+}
+.about-body {
+  font-family: var(--custome-fnt);
+  /* font-size: var(--custome-fnt-size); */
+  font-size :1.1563em;
+  text-align: justify;
+  text-justify: inter-word;
+}

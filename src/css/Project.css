@@ -1,0 +1,22 @@
+.project-main{
+    background-color: lightcyan;
+    display: grid;
+    grid-template-columns: 25% auto;
+    column-gap: 15px;
+    overflow: auto;
+}
+.project-display{
+    display:grid;
+    gap: 5px;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.div-vdo{
+    box-sizing: border-box;
+    background-color: red;
+    margin-top: 0;
+}
+.heading{
+    grid-column: 1 / span 2;
+}
