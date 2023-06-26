@@ -48,6 +48,7 @@ app.use(
   })
 );
 
+//from contect.js
 app.post("/save", async (req, res) => {
   try {
     const result = await dbOperation.saveMassage(req.body);
@@ -57,6 +58,7 @@ app.post("/save", async (req, res) => {
   }
 });
 
+//from main layout.
 app.get("/singIn", (req, res) => {
   //console.log(req.session)
   if (req.session.user) {
@@ -65,6 +67,7 @@ app.get("/singIn", (req, res) => {
     res.send({ loggedIn: false });
   }
 });
+//from main layout.
 app.post("/logOut", (req, res) => {
   req.session.destroy();
   res.send({user:"Logged Out"});
@@ -76,6 +79,7 @@ app.post("/logOut", (req, res) => {
     
 // })
 
+//from loginMain.js
 app.post("/signIn", async (req, res) => {
   const enteredPassword = req.body.password;
   const result = await dbOperation.singIn(req.body.username);
@@ -97,6 +101,8 @@ app.post("/signIn", async (req, res) => {
     res.send({ error: "user do not exit" });
   }
 });
+
+//from login main.js
 app.post("/singUp", async (req, res) => {
   try {
     const result = await dbOperation.singUp(req.body);

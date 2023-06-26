@@ -4,9 +4,8 @@ import React,{useContext} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import '../css/welcome.css';
-// import { userContext } from "./MainLayoutOne";
+
 function Welcome() {
-  // const contextInput=useContext(userContext);
   console.log('welcome')
   return (
     <>
@@ -33,7 +32,6 @@ function Welcome() {
     </>
   );
 }
-export default Welcome
 export const MemoizedWelcome=React.memo(Welcome);
 
 

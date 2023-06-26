@@ -54,6 +54,7 @@ function LoginMain() {
         }
         else if(res.data.error){
           alert (res.data.error);
+          //to clear the input field.
           Array.from(e.target).forEach((ev) => (ev.value = ""));
         }
       })
@@ -79,6 +80,7 @@ function LoginMain() {
       )
       .then((res) => {
         alert(res.data);
+        //to clear the input field.
         Array.from(e.target).forEach((ev) => (ev.value = ""));
       })
       .catch((err) => {
@@ -91,16 +93,6 @@ function LoginMain() {
     console.log("heello");
     setIsSingIn(isSingBool);
   };
-
-  // useEffect(() => {
-  //   axios.get("/singIn")
-  //   .then(res=>{
-  //     if(res.data.loggedIn){
-  //       contextInput.changeLogBtnText({status:true,value:"Logged In"})
-  //     }
-  //     console.log(res)
-  //   });
-  // }, []);
 
   const singin = () => {
     if (isSingIn) {

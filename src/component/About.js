@@ -5,11 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //external css
 import "../css/About.css";
 
-// import { userContext } from "./MainLayoutOne";
-
 const About=forwardRef(()=>{
   console.log('about');
-  // const contextInput=useContext(userContext)
   return (
     <div id='about01' className="about-home p-4 rounded-2">
       <h1 className=" about-heading">About</h1>

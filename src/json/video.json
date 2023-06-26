@@ -1,27 +1,33 @@
 [
   {
     "id": "1",
-    "src": "../videos/project1.mp4",
+    "src": "../videos/Project1.mp4",
     "name":"Project1",
     "type": "video/mp4"
   },
   {
     "id": "2",
-    "src": "../videos/project2.mp4",
+    "src": "../videos/Project2.mp4",
     "name":"Project2",
     "type": "video/mp4"
   },
   {
     "id": "3",
-    "src": "../videos/videoplayback.mp4",
+    "src": "../videos/Project3.mp4",
     "name":"Project3",
     "type": "video/mp4"
   },
   {
     "id": "4",
-    "src": "../videos/project4.mp4",
+    "src": "../videos/Project4.mp4",
     "name":"Project4",
     "type": "video/mp4"
+  },
+  {
+    "id":"5",
+    "src":"../videos/Project5.mp4",
+    "name":"Project5",
+    "type":"video/mp4"
   }
 
 ]

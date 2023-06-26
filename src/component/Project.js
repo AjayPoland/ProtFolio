@@ -1,4 +1,4 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import Card from 'react-bootstrap/Card'
 
 //bootstrap styling css
@@ -8,9 +8,8 @@ import '../css/Project.css'
 import project from '../images/project.jpg'
 
 //import videos
-// import song from '../videos/JAHILA SAMMA SONG.mp4'
-
 import videodata from '../json/video.json'
+
 function Project() {  
     console.log("project");
   return (
@@ -29,9 +28,6 @@ function Project() {
         </Card>
       </div>
       <div className='project-display'>
-      {/* <iframe width="420" height="345" src="https://www.youtube.com/?tab=r1">
-</iframe> */}
-        {/* <video src={song} width="420" height="345" autoPlay controls/> */}
         {
             videodata.map(key=><div className='div-vdo border' key={key.id}><video src={key.src} width="420" height="345" autoPlay controls muted loop/> <p>Project Name: {key.name} <br/> Video Type: {key.type}</p> </div>)
         }
